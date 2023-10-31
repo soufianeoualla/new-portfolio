@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+
+}
+.container{
+    background-color: #fff;
+    max-width: 900px;
+    border-radius: 10px;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns:320px 500px;
+    position: relative;
+    
+}
+
+.img{
+    overflow: hidden;
+}
+.img img{
+    display: block;
+    width: 395px;
+    height: 320px;
+  
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+   
+
+}
+.text{
+    
+    
+    padding: 1.5rem 2rem 0 2.5rem;
+}
+.text h1{
+    font-size: 23px;
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 1rem;
+}  
+.text p{
+    color: hsl(214, 17%, 51%);
+    width: 80%;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+.avatar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.avatar-details{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+}
+.avatar-details img{
+    width: 50px;
+    border-radius: 50%;
+}
+.avatar-name b{
+    
+    color: hsl(217, 19%, 35%);
+
+}
+.avatar-name p{
+    color: hsl(212, 23%, 69%);
+}
+#share-btn{
+    padding: 12px 12px;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    color: hsl(214, 17%, 51%);
+}
+#share-btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: hsl(214, 17%, 51%);
+}
+.share{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 15px 30px;
+    background-color: hsl(217, 19%, 35%);
+    
+    color: #fff;
+    border-radius: 12px;
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    transform: translate(18%,-230%);
+    transition: display 0.5s ease-out;
+    
+}
+
+.share span{
+    color: hsl(212, 23%, 69%);
+    letter-spacing: 4px;
+}
+.share a i{
+    font-size: 18px;
+}
+.share a{
+  text-decoration: none;
+  color: #fff;
+}
+.triangle{
+    width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid hsl(217, 19%, 35%);
+    position: absolute;
+    bottom: 40px;
+    right: -10px;
+    transform: translate(-155%,-385%);
+}
+
+@media screen and (max-width:915px) {
+    .container{ 
+        max-width: 800px;
+        grid-template-columns:320px 400px;
+       
+        
+    }
+    .text h1{
+        font-size: 19px;
+        
+    }  
+    .text p{
+        
+        width: 100%;
+        
+        margin-bottom: 1.5rem;
+       
+    }
+    .text{
+    
+    
+        padding: 1.5rem 2rem 1rem 2.5rem;
+    }
+}
+@media screen and (max-width:735px) {
+    .container{ 
+        max-width: 700px;
+        grid-template-columns:270px 350px;
+       
+        
+    }
+    .text h1{
+        font-size: 17px;
+        
+    }  
+    .text p{
+        font-size: 12px;
+        width: 90%;
+        
+        margin-bottom: 1.5rem;
+       
+    }
+    .text{
+    
+    
+        padding: 1.5rem 2rem 1rem 2.5rem;
+    }
+}
+@media screen and (max-width:655px){
+    .container{ 
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 260px 273px;
+        max-width: 390px;
+        margin: 1rem;
+        
+       
+        
+    }
+    
+    
+    .text{
+    
+        overflow: hidden;
+        padding:  1.5rem ;
+    }
+    .share{
+        display: flex;
+        justify-content: start;
+        position: relative;
+        width: 117%;
+        bottom: 0;
+        right: -0;
+        transform: translate(-7%,-105%);
+        border-radius: 0;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 13px;
+        padding: 20px 30px;
+        transition: display 0.5s ease-out;
+        
+        
+    }
+    .img img{
+        
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+       
+    
+    }
+    #share-btn{
+       z-index: 10;
+    }
+    .hidden{
+      display: none;
+    }
+   
+}
