@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 16px;
+    background-color: #FFDBAA;
+
+}
+.container{
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 600px 400px;
+    margin: auto;
+    background: url(component/assets/bg-pattern-desktop.svg) center no-repeat center/cover;
+    overflow: hidden;
+    margin: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)) ;
+    
+    
+
+}
+.mobile{
+    display: none;
+}
+.text{
+    padding: 2rem 6rem 6rem;
+    display: grid;
+
+}
+.content{
+    display: grid;
+    place-content: center;
+    margin: auto;
+}
+.text h1{
+    font-size: 40px;
+    letter-spacing: 10px;
+    color: hsl(0, 6%, 24%);
+    margin-bottom: 1.5rem;
+}
+.text h1 span{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+.text p{
+    color: hsl(0, 36%, 70%);
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+.input{
+    position: relative;
+}
+.input input{
+    display: block;
+    width: 100%;
+    padding: 15px 15px 15px 25px;
+    border: 1px solid hsl(0, 36%, 70%, 0.5);
+    border-radius: 30px;
+    outline-color: hsl(0, 93%, 68%);
+}
+
+::placeholder{
+    color:hsl(0, 36%, 70%) ;
+    
+}
+
+#arrow{
+    color: white;
+    padding: 16px 35px;
+    border-radius: 30px;
+    background: linear-gradient( 135deg,  hsl(0, 80%, 86%),  hsl(0, 74%, 74%));
+    position: absolute;
+    right: -1px;
+    top: 0px;
+    transform: translate(0%,0%);
+    box-shadow: 9px 10px 29px 0px rgba(0,0,0,0.19);
+    
+}
+
+#arrow:hover{
+    background: linear-gradient( 135deg,  hsl(0, 0%, 100%), hsl(0, 80%, 86%));
+    cursor: pointer;
+}
+#error{
+   
+    position: absolute;
+    right: 90px;
+    top: 0px;
+    transform: translate(-30%,43%);
+    transition: display 0.5s ease-out;
+}
+.error-text{
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: -20px;
+    transform: translate(13%,83%);
+    transition: display 0.5s ease-out;
+}
+
+.hero img{
+    display: block;
+    width: 100%;
+   
+}
+.hidden{
+    display: none;
+}
+@media screen and (max-width:950px) {
+    body{
+        font-size: 14px;
+    }
+    .container{
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: 500px 300px;
+        
+    
+    }
+    .text{
+        padding: 2rem 4rem 0;
+        display: grid;
+    
+    }
+    .text h1{
+        font-size: 30px;
+        
+        margin-bottom: 1rem;
+    }
+   
+    .text p{
+        
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width:770px) {
+    .container{
+        max-width: 700px;
+        display: grid;
+        grid-template-columns: 400px 200px;
+        
+    
+    }
+    .text{
+        padding: 2rem 2rem 0;
+        display: grid;
+    
+    }
+    .hero img{
+        display: block;
+        width: 300px;
+        height: 325px;
+       
+    }
+}
+
+@media screen and (max-width:670px) {
+    .container{
+        max-width: 350px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        
+    
+    }
+    .hero img{
+        display: block;
+        width: 100%;
+        
+       
+    }
+    .hero{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        width: 100%;
+
+    }
+    .text{
+        padding:  0;
+        display: grid;
+    
+    }
+    .logo{
+        padding: 1.5rem;
+    }
+    .text h1{
+        padding:  1rem 0;
+        text-align: center;
+    }
+   
+    .text p{
+        padding:  0 ;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        
+    }
+    .input{
+        padding: 1rem 1rem;
+    }
+    #arrow {
+        color: white;
+        padding: 16px 35px;
+        border-radius: 30px;
+        background: linear-gradient( 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        position: absolute;
+        right: -1px;
+        top: 0px;
+        transform: translate(-22%,35%);
+        box-shadow: 9px 10px 29px 0px rgba(0,0,0,0.19);
+    }
+}
+@media screen and (max-width:300px){
+    .text h1{
+        font-size: 25px;
+    }
+   
+    .text p{
+       
+        font-size: 12px;
+    }
+}
