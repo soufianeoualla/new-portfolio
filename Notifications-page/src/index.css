@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root{
+
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%)
+
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--White);
+  font-size: 16px;
+}
+.container{
+  background-color: var(--White);
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem 1.5rem 0;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px -11px rgba(0,0,0,0.1);
+}
+
+.notification-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.notification-top h3{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 0.7rem;
+  font-size: 22px;
+}
+.notification-number{
+  display: flex;
+  justify-content: center;
+  background-color: var(--Blue);
+  color: var(--White);
+  border-radius: 5px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.9rem;
+}
+.notification-top p{
+  color: var(--Dark-grayish-blue);
+}
+.notification-top p:hover{
+  color: var(--Blue);
+  cursor: pointer;
+  
+}
+
+.notification{
+  display: flex;
+  justify-content: start;
+  
+  padding: 1rem;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+.new{
+  background-color: var(--Light-grayish-blue-1);
+}
+
+.notification{
+  cursor: pointer;
+}
+
+
+.avatar{
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.notification-item{
+  display: grid;
+  
+}
+.avatar-name{
+  font-weight: 800;
+  margin-right: 6px;
+  color: var(--Very-dark-blue);
+}
+.avatar-name:hover{
+  color: var(--Blue);
+  cursor: pointer;
+}
+.notification-details {
+  color: var(--Dark-grayish-blue);
+  
+  display: block;
+  
+  
+}
+.post,.group{
+  margin-left: 4px;
+  font-weight: 700;
+}
+.post ,
+.group {
+  text-decoration: none;
+  color: var(--Dark-grayish-blue);
+}
+.group {
+  color: var(--Blue);
+}
+.post :hover{
+  color: var(--Blue);
+}
+.fa-circle{
+  
+  color: var(--Red);
+  font-size: 8px;
+  margin-left: 3px;
+  position: relative;
+  top: -2px;
+}
+.date{
+  color: var(--Grayish-blue);
+}
+
+.msg{
+  padding: 1rem;
+  border: 1px solid var(--Light-grayish-blue-1);
+  color: var(--Dark-grayish-blue);
+  border-radius: 5px;
+ 
+  position: relative;
+  right: 40px;
+  
+  transform: translate(8%);
+  margin-top: 0.5rem;
+}
+.msg:hover{
+  background-color: var(--Light-grayish-blue-1);
+  cursor: pointer;
+}
+
+.picture {
+  width:40px;
+  position: absolute;
+  right: 0;
+  
+}
+.picture :hover{
+  cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .container{
+      height: 100vh;
+      margin: 0;
+      padding: 1rem;
+    }
+    .mobile{
+      display: block;
+    }
+    .msg {
+      
+      right: 0%;
+      
+  }
+
+}
+
+@media screen and (max-width:500px){
+  body{
+    font-size: 14px;
+  }
+  .picture {
+    width: 40px;
+  }
+  h3{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:381px){
+  body{
+    font-size: 12px;
+  }
+   img{
+    width: 30px;
+  }
+  h3{
+    font-size: 17px;
+  }
+}
+@media screen and (max-width:321px){
+  body{
+    font-size: 11px;
+  }
+  
+  h3{
+    font-size: 16px;
+  }
+  .container{
+    padding: 0.5rem;
+  }
+}
+
+
+
