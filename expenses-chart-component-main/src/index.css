@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+
+
+:root{
+    
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--Cream);
+    font-size: 18px;
+}
+.container{
+    display: grid;
+    gap: 1rem;
+    
+
+}
+.balance{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Soft-red);
+    padding: 1.5rem;
+    border-radius: 20px;
+    width: 500px;
+    font-size: 15px;
+}
+.text{
+    display: grid;
+    gap: 0.5rem;
+    color: var(--Very-pale-orange);
+}
+.text b{
+    font-size: 30px;
+}
+.card{
+    background-color: var(--Very-pale-orange);
+    border-radius: 20px;
+    padding: 2rem 2rem;
+    color: var(--Medium-brown);
+    width: 500px;
+}
+.card h2{
+    color: var(--Dark-brown);
+}
+.days{
+    display: flex;
+    justify-content: space-around;
+   
+    padding: 4rem 0;
+    border-bottom: 1px solid var( --Cream);
+    margin-bottom: 2rem;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+
+}
+.total b{
+    color: var(--Dark-brown);
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}
+.total h2{
+    font-size: 35px;
+}
+.spend{
+    transform: rotate(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: start;
+}
+.spend div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.spend p{
+    transform: rotate(180deg);
+    position: absolute;
+    top: -20%;
+}
+.amount{
+    transform: rotate(180deg);
+    margin-top: 0.4rem;
+    background-color: var(--Dark-brown);
+    padding: 0.3rem 0.4rem;
+    border-radius: 5px;
+    color: var(--Cream);
+    font-size: 16px;
+    
+}
+.cost{
+    background-color: var(--Soft-red);
+    border-radius: 5px;
+    width: 2.8rem;
+    
+}
+.cost:hover{
+    cursor: pointer;
+    background-color: hsl(10, 79%, 65%,0.6);
+
+}
+
+.max{
+    background-color: var(--Cyan);
+}
+.max:hover{
+    background-color: hsl(186, 34%, 60%,0.6);
+}
+
+@media screen and (max-width:517px) {
+    .balance{
+        width: 450px;
+    }
+    .card{
+        width: 450px;
+    }
+    .amount {
+        
+        padding: 0.2rem 0.3rem;
+       
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:457px){
+    .balance{
+        width: 400px;
+    }
+    .card{
+        width: 400px;
+    }
+}
+@media screen and (max-width:407px){
+    
+    .balance{
+        width: 350px;
+        font-size: 13px;
+    }
+    .text b{
+        font-size: 22px;
+    }
+    .card{
+        width: 350px;
+    }
+    .cost{
+        width: 36px;
+    }
+    .card h2{
+        font-size: 25px;
+    }
+    .total{
+        font-size: 13px;
+    }
+    .total h2{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:357px){
+    .balance{
+        width: 300px;
+        font-size: 12px;
+        padding: 1rem;
+    }
+    .logo img{
+        width: 60px;
+    }
+    .text b{
+        font-size: 19px;
+    }
+    .card{
+        width: 300px;
+        padding: 1.5rem 1.5rem;
+    }
+    .cost{
+        width: 32px;
+    }
+    .card h2{
+        font-size: 20px;
+    }
+    .total{
+        font-size: 12px;
+    }
+    .total h2{
+        font-size: 25px;
+    }
+    .spend p{
+        font-size: 15px;
+    }
+    .days{
+        padding: 2.6rem 0;
+    }
+    .amount {
+        
+        padding: 0.15rem 0.2rem;
+       
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:307px){
+    .balance{
+        width: 250px;
+        font-size: 11px;
+        padding: 0.8rem;
+    }
+    .logo img{
+        width: 40px;
+    }
+    .text b{
+        font-size: 17px;
+    }
+    .card{
+        width: 250px;
+        padding: 1rem 1rem;
+    }
+    .cost{
+        width: 26px;
+    }
+    .card h2{
+        font-size: 18px;
+    }
+    .total{
+        font-size: 11px;
+    }
+    .total h2{
+        font-size: 23px;
+    }
+    .spend p{
+        font-size: 13px;
+    }
+    .days{
+        padding: 2.2rem 0;
+    }
+    .amount {
+        
+        padding: 0.1rem 0.15rem;
+       
+        font-size: 11px;
+    }
+}
