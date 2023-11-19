@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+:root{
+
+  --Blue: hsl(246, 80%, 60%);
+  --Light-red-work : hsl(15, 100%, 70%);
+  --Soft-blue: hsl(195, 74%, 62%);
+  --Light-red-study : hsl(348, 100%, 68%);
+  --Lime-green: hsl(145, 58%, 55%);
+  --Violet: hsl(264, 64%, 52%);
+  --Soft-orange: hsl(43, 84%, 65%);
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+  --white:hsl(0, 0%, 100%);
+
+  
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--Very-dark-blue);
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1.5rem;
+  margin: 1rem;
+}
+
+.profile{
+  display: grid;
+  
+  background-color: var(--Dark-blue);
+  border-radius: 15px;
+  color: var(--Pale-Blue);
+  
+}
+.avatar{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Blue);
+  padding: 1.5rem 5rem 4rem 1.5rem;
+  border-radius: 15px;
+}
+.avatar-img{
+  width: 80px;
+  margin-bottom: 2.5rem;
+  border: 4px solid white;
+  border-radius: 50%;
+  
+}
+.avatar p{
+  font-size: 14px;
+}
+.avatar h1{
+  color: var(--white);
+  font-weight: 300;
+  margin-top: 0.5rem;
+  font-size: 38px;
+  text-transform: capitalize;
+}
+.time{
+  padding: 1.5rem 5rem 1.5rem 1.5rem;
+  color: hsl(236, 100%, 87%,0.5);
+}
+.time ul{
+  display: grid;
+  gap: 1rem;
+  font-size: 18px;
+}
+.time ul li{
+  list-style: none;
+
+}
+.time ul li:hover{
+  cursor: pointer;
+  color: var(--white);
+}
+.items{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.5rem;
+}
+.icon{
+  height: 30%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.icon img{
+  position: absolute;
+  right: 5%;
+  top: -4%;
+}
+.social img{
+  right: 6%;
+  top: -23%;
+}
+.work{
+  background-color: var(--Light-red-work);
+}
+.play{
+  background-color: var(--Soft-blue);
+}
+.study{
+  background-color: var(--Light-red-study);
+}
+
+.exercise{
+  background-color: var(--Lime-green);
+}
+.social{
+  background-color: var(--Violet);
+}
+.self-care{
+  background-color: var(--Soft-orange);
+}
+
+.activity{
+  background-color: var(--Dark-blue);
+  
+  border-radius: 15px;
+}
+.activity:hover{
+  background-color: var(--Desaturated-blue);
+  cursor: pointer;
+}
+.activity-details{
+  padding:  1.5rem 2rem;
+  background-color: var(--Dark-blue);
+  border-radius: 15px;
+  z-index: 3;
+  position: relative;
+  top: -10%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;  
+  height: 80%;
+  
+}
+.activity-details:hover{
+  background-color: var(--Desaturated-blue);
+  cursor: pointer;
+}
+
+.activity-name{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+  
+}
+.activity-name b{
+  font-weight: 500;
+}
+.activity-name img:hover{
+  filter: brightness(0) invert(1);
+}
+.activity-details h1{
+  font-size: 48px;
+  color: var(--white);
+  font-weight: 300;
+  margin-bottom: 0.4rem;
+
+}
+.activity-details p{
+  color: var(--Pale-Blue);
+  font-size: 15px;
+}
+.clicked{
+  font-size: 500;
+  color: var(--white);
+}
+@media screen and (max-width:900px) {
+  .activity-details h1{
+    font-size: 40px;
+  }
+  .activity-details p{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width:768px){
+    .container{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .avatar{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      align-items: center;
+      padding: 2rem;
+    }
+    .avatar br{
+      display: none;
+    }
+    .avatar-img {
+      margin: 0;
+    }
+    .time{
+      padding: 2rem;
+    }
+    .time ul{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .items{
+      display: flex;
+      flex-direction: column;
+    }
+    .hours{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    .activity-name{
+      margin-bottom: 0.3rem;
+    }
+}
