@@ -1,0 +1,118 @@
+#journey{
+    background-color: hsl(220, 100%, 99%);
+}
+.journey{
+    text-align: center;
+    max-width: 1440px;
+    margin: auto;
+}
+.journey h1{
+    font-size: 40px;
+    width: 50%;
+    margin: auto;
+}
+.journey p{
+    width: 55%;
+    margin: 1rem auto 2rem;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 0 11rem;
+    gap: 1.5rem;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0 1rem;
+    width: 220px;
+    background-color:hsl(37, 99%, 64%) ;
+    border-radius: 15px;
+    height: 150px;
+    
+    
+
+}
+
+.card:nth-child(2){
+    background-color:hsl(191, 100%, 75%) ;
+    position: relative;
+    transform: translate(0%,80%);
+}
+.card:nth-child(2) img{
+    position: relative;
+    transform: translate(0,10%);
+}
+.card:nth-child(3){
+    background-color: hsl(358, 96%, 71%);
+}
+.card:nth-child(3) img{
+    width: 80%;
+    filter: brightness(0) invert(1);
+}
+.card:nth-child(3) i{
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    transform: translate(0,-20%);
+   
+}
+.card:nth-child(4){
+    background-color: hsl(15, 100%, 65%);
+    position: relative;
+    transform: translate(0%,80%);
+}
+.card:nth-child(4) img{
+    width: 50%;
+}
+.card:nth-child(5){
+    background-color: hsl(205, 87%, 56%);
+}
+.card p{
+    width: 100%;
+    margin: 0;
+    color: hsl(0, 0%, 100%) !important;
+    
+}
+.card h1{
+    font-size: 40px;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%) !important;
+}
+.card img{
+    width: 80px;
+}
+@media screen and (max-width:768px) {
+   article{
+    margin-bottom: 2rem;
+   }
+   .journey h1{
+    font-size: 30px;
+    width: 100%;
+    text-align: left;
+   
+   }
+   .journey p{
+    width: 100%;
+    text-align: left;
+    line-height: 1.6;
+   }
+   .card h1{
+    text-align: center;
+   }
+   .card p{
+    text-align: center;
+   }
+   .cards{
+    display: grid;
+    margin: 1rem;
+   }
+   .card:nth-child(2),
+   .card:nth-child(4){
+    transform: translate(0,0);
+   }
+    
+}

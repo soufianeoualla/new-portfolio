@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+    scroll-behavior: smooth;
+}
+.container{
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+}
+h1{
+   color: hsl(60, 1%, 14%);
+}
+p{
+    color: hsl(240, 0%, 61%);
+}
+.banner{
+    
+    background: linear-gradient(to right, hsl(271, 100%, 59%) 10%,hsl(261, 100%, 59%));
+    
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+    padding: 3rem ;
+    border-radius: 15px;
+    position: absolute;
+    top: -0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.banner h1{
+    font-size: 35px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+.banner p{
+    width: 50%;
+    margin: 1.5rem auto;
+    color: hsl(0, 0%, 87%);
+}
+.banner button{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 100%,0.1);
+    border: none;
+    outline: none;
+    padding: 1rem 1.5rem;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.banner button:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(60, 1%, 14%);
+    cursor: pointer;
+}
+@media screen and (max-width:1400px){
+    .banner p{
+        width: 100%;
+        font-size: 14px;
+    }
+
+}
+@media screen and (max-width:700px) {
+    .banner{
+        padding: 1rem;
+        height: auto;
+        width: 90vw;
+        transform: translate(-50%,-50%);
+      
+    }
+    .banner h1{
+        font-size: 25px;
+    }
+    
+    
+    
+}

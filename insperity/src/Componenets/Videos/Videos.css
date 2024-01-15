@@ -1,0 +1,78 @@
+.videos{
+    max-width: 1440px;
+    margin: auto ;
+    text-align: center;
+}
+.videos p{
+    width: 60%;
+    margin: 1.5rem auto 2rem;
+}
+.videos h1{
+    font-size: 40px;
+    width: 50%;
+    margin: auto;
+}
+.videos-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+.video-template{
+    padding: 1.5rem;
+    border: 1px solid hsl(240, 0%, 61%,0.2);
+    border-radius: 15px;
+    text-align: left;
+}
+.thumbnail-video{
+    position: relative;
+    margin-bottom: 1rem;
+}
+.thumbnail-video .fa-solid{
+    left: 50%;
+    background: hsl(22, 20%, 55%);
+}
+.thumbnail-video img{
+    border-radius: 15px;
+    width: 100%;
+}
+.client{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.client .name{
+    display: grid;
+    align-items: start;
+    text-align: left;
+}
+.client .name strong{
+    font-weight: 600;
+}
+.company img{
+    width: 70px;
+}
+.video-template .watch-video i{
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+}
+.video-template p{
+    width: 100%;
+}
+@media screen and (max-width:768px) {
+    .videos h1{
+        font-size: 30px;
+        width: 100%;
+        text-align: left;
+    }
+    .videos p{
+        width: 100%;
+        text-align: left;
+        line-height: 1.6;
+        font-size: 15px;
+    }
+    .videos-section{
+        grid-template-columns: 1fr;
+    }
+}

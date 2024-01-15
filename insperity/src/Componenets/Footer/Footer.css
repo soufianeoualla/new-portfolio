@@ -1,0 +1,106 @@
+footer{
+    margin-top: 15rem;
+    height: 70vh;
+    background-color: hsl(60, 1%, 14%);
+    padding: 15rem 6rem 4rem;
+    display: grid;
+    place-content: center;
+    grid-template-columns:repeat(3,1fr);
+    align-items: start;
+    position: relative;
+    
+}
+footer i{
+    font-size: 16px;
+}
+
+.left{
+    display: grid;
+    gap: 1rem;
+}
+.left img{
+    width: 150px;
+}
+.left .search{
+    position: relative;
+}
+.search i{
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translate(0%,-50%);
+    color: hsl(240, 0%, 61%);
+}
+input{
+    padding: 0.5rem 0 0.5rem 8%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 100%,0.2);
+    width: 232px;
+}
+input::placeholder{
+    color: hsl(240, 0%, 61%);
+    transform: translate(0,5%);
+}
+.social-icons{
+    display: flex;
+    gap: 0.5rem;
+    color: hsl(0, 0%, 100%);
+}
+.social-icons i{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background: linear-gradient(to right, hsl(14, 98%, 57%), hsl(22, 94%, 69%));
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.social-icons i:hover{
+    cursor: pointer;
+    color: hsl(22, 94%, 69%);
+    background: hsl(0, 0%, 100%);
+    transition: background ease-out 0.33s;
+}
+footer strong{
+    color: hsl(0, 0%, 100%);
+    
+}
+.middle,
+.first,
+.second{
+    display: grid;
+    gap: 1rem;
+}
+footer ul{
+    display: grid;
+    gap: 0.5rem;
+    
+}
+footer ul li a:hover{
+    color: hsl(0, 0%, 100%);
+}
+.right{
+    display: flex;
+    gap: 6rem;
+}
+
+
+@media screen and (max-width:768px) {
+    footer{
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 1.5rem;
+        margin-top: 15rem;
+    }
+    .left input{
+        width: 257px;
+        padding: 0.5rem  0 0.5rem 15%;
+    }
+    .social-icons i{
+        width: 45px;
+        height: 45px;
+    }
+    
+}

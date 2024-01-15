@@ -1,0 +1,169 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    font-size: 18px;
+
+}
+.desktop-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.logo img{
+    width: 180px;
+}
+
+nav ul{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+    
+}
+ li a {
+    color: hsl(240, 0%, 61%);
+    text-decoration: none;
+
+}
+
+ li a:hover{
+    color: hsl(60, 1%, 14%);
+    font-weight: 600;
+}
+.primary-btn{
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+    color: hsl(22, 94%, 69%);
+    background-color: transparent;
+    border: 1px solid hsl(22, 94%, 69%);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.primary-btn:hover{
+    background: linear-gradient(to right, hsl(14, 98%, 57%), hsl(22, 94%, 69%));
+    
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.sign-in {
+    text-decoration: none;
+    padding: 1rem;
+    color: hsl(22, 94%, 69%);
+    font-weight: 600;
+}
+.sign-in:hover{
+    
+    color: hsl(14, 98%, 57%);
+    
+   
+    
+}
+.fa-bars{
+    display: none;
+}
+@media screen and (max-width:1400px){
+    header li a{
+        font-size: 14px;
+    }
+    .sign-in{
+        font-size: 16px;
+    }
+    .primary-btn{
+        font-size: 16px;
+    }
+    header{
+        padding: 1rem;
+    }
+
+}
+@media screen and (max-width:1050px){
+    header{
+        display: grid;
+        place-content: center;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+   
+   
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+
+    }
+    .logo img{
+        width: 120px;
+    }
+    .mobile-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        padding: 0 3rem 3rem 1.5rem;
+        height: 100%;
+        background-color: hsl(0, 0%, 100%);
+        font-size: 15px;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        right:0%;
+        width: 70vw;
+        
+    }
+    .mobile-nav nav{
+        transform: translate(0,-20%);
+    }
+    button{
+        font-size: 15px !important;
+    }
+    
+    .mobile-nav  ul{
+        display: grid;
+    }
+    .mobile-nav li a{
+        color: hsl(240, 0%, 61%);
+    }
+    .mobile-nav div{
+        display: grid;
+    }
+    .desktop-nav{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+        font-size: 20px;
+        color: hsl(22, 94%, 69%);
+    }
+    .mobile-nav .fa-x{
+        top: 2rem;
+        right: 2rem;
+        font-size: 20px;
+        transform: translate(-50%,50%);
+        color: hsl(22, 94%, 69%);
+    }
+    .desktop{
+        display: none;
+    }
+    .sign-in{
+        margin-top: 2rem;
+    }
+    
+  
+}

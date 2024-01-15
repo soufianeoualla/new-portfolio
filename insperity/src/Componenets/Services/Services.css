@@ -1,0 +1,140 @@
+.services{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    margin: 3rem auto 3rem;
+}
+.services h1{
+    font-size: 50px;
+    text-align: center;
+}
+.items{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.item{
+    width: 320px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 3rem;
+    
+    align-items: start;
+    background: rgb(240,143,175);
+    background: linear-gradient(146deg, rgba(240,143,175,1) 19%, rgba(229,66,121,1) 100%);
+    height: 250px;
+    padding: 2rem;
+    border-radius: 30px;
+    color: hsl(0, 0%,100%);
+    font-size: 25px;
+}
+.item:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.item:nth-child(2){
+    background: rgb(188,174,253);
+    background: linear-gradient(146deg, rgba(188,174,253,1) 19%, rgba(138,114,252,1) 100%);
+    
+}
+.item:nth-child(3){
+    background: rgb(169,230,248);
+    background: linear-gradient(146deg, rgba(169,230,248,1) 19%, rgba(68,194,226,1) 100%);
+}
+.item:nth-child(4){
+    background: rgb(237,192,152);
+    background: linear-gradient(146deg, rgba(237,192,152,1) 19%, rgba(234,152,57,1) 100%);
+}
+.item:nth-child(4) b{
+    width: 100%;
+}
+span{
+    color: hsl(14, 98%, 57%);
+}
+b{
+    width: 50%;
+}
+i{
+    font-size: 55px;
+}
+.item img{
+    width: 55px;
+    filter: brightness(0) invert(1);
+}
+.browse-more{
+    background: rgb(253,90,42);
+    background: linear-gradient(83deg, rgba(253,90,42,1) 19%, rgba(244,143,28,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 250px;
+    border-radius: 30px;
+    color: hsl(0, 0%,100%);
+    gap: 1.5rem;
+
+}
+
+.browse-more i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: hsl(18, 97%, 61%);
+    color: hsl(0, 0%,100%);
+    font-size: 40px;
+    box-shadow: 0px 10px 66px 0px rgba(0,0,0,0.2);
+
+}
+.browse-more i:hover{
+    color: hsl(14, 98%, 57%);
+    background-color: hsl(0, 0%,100%);
+    cursor: pointer;
+}
+
+.browse-more p{
+    color: hsl(0, 0%,100%);
+    font-weight: 600;
+}
+@media screen and (max-width:1400px){
+    .services{
+        padding: 1rem;
+    }
+    
+    .item{
+        width: 25%;
+    }
+    .item b{
+        font-size: 18px ;
+    }
+}
+@media screen and (max-width:768px) {
+    .item{
+        width: 100%;
+    }
+    .services h1{
+        font-size: 30px;
+    }
+    .services h1 br{
+        display: none;
+    }
+    .items{
+        display: grid;
+    }
+    .browse-more{
+        margin: auto;
+        background: transparent;
+    }
+    .browse-more p{
+        color: hsl(18, 97%, 61%);
+    }
+    
+}
