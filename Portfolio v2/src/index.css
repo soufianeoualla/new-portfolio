@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+body{
+  background-color: #f3f3f3;
+}
+.wrapper{
+  
+  background-color:#151414 ;
+  color: #f3f3f3;
+}
+.container{
+  max-width: 1220px;
+}
+.project-cta{
+  transform: translate(-50%,-50%);
+}
+
+.project-img:hover .project-cta{
+  opacity: 1;
+}
+
